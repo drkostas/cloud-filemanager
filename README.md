@@ -26,6 +26,10 @@ is supported. [PYPI Package](https://pypi.org/project/cloud-filemanager/)
 For a detailed usage example see 
 [example.py](https://github.com/drkostas/cloud-filemanager/master/example.py).
 
+You will need to create an Api key for your Dropbox account. 
+[Reference 1](http://99rabbits.com/get-dropbox-access-token/), 
+[Reference 2](https://dropbox.tech/developers/generate-an-access-token-for-your-own-account) 
+
 ### Installing and using the library <a name = "install_use"></a>
 
 First, you need to install the library using pip:
