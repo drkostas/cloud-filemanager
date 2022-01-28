@@ -43,7 +43,8 @@ class TestDropboxCloudstore(unittest.TestCase):
         cloud_store = DropboxCloudManager(config=self.configuration.get_cloud_config()['config'])
         # Upload file
         logger.info('Uploading file..')
-        file_to_upload = open(os.path.join(self.test_data_path, self.file_name), 'rb').read()
+        with open(os.path.join(self.test_data_path, self.file_name), 'rb') as f:
+            file_to_upload = f.read()
         cloud_store.upload_file(file_to_upload, '/tests/' + self.file_name)
         # Check if it was uploaded
         self.assertIn(self.file_name, cloud_store.ls('/tests/').keys())
@@ -52,14 +53,18 @@ class TestDropboxCloudstore(unittest.TestCase):
         cloud_store.download_file(frompath='/tests/' + self.file_name,
                                   tofile=os.path.join(self.test_data_path, 'actual_downloaded.txt'))
         # Compare contents of downloaded file with the original
-        self.assertEqual(open(os.path.join(self.test_data_path, self.file_name), 'rb').read(),
-                         open(os.path.join(self.test_data_path, 'actual_downloaded.txt'), 'rb').read())
+        with open(os.path.join(self.test_data_path, self.file_name), 'rb') as f:
+            expected = f.read()
+        with open(os.path.join(self.test_data_path, 'actual_downloaded.txt'), 'rb') as f:
+            actual = f.read()
+        self.assertEqual(expected, actual)
 
     def test_upload_delete(self):
         cloud_store = DropboxCloudManager(config=self.configuration.get_cloud_config()['config'])
         # Upload file
         logger.info('Uploading file..')
-        file_to_upload = open(os.path.join(self.test_data_path, self.file_name), 'rb').read()
+        with open(os.path.join(self.test_data_path, self.file_name), 'rb') as f:
+            file_to_upload = f.read()
         cloud_store.upload_file(file_to_upload, '/tests/' + self.file_name)
         # Check if it was uploaded
         self.assertIn(self.file_name, cloud_store.ls('/tests/').keys())
