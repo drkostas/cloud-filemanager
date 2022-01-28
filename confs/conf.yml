@@ -1,0 +1,5 @@
+tag: test
+cloud-filemanager:
+  - config:
+      api_key: your-api-key
+    type: dropbox

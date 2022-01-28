@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "tag": {
+      "type": "string"
+    },
+    "cloud-filemanager": {
+      "$ref": "#/definitions/cloud-filemanager"
+    }
+  },
+  "required": [
+    "cloud-filemanager"
+  ],
+  "definitions": {
+    "cloud-filemanager": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "required": [
+        "config",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "dropbox",
+            "s3"
+          ]
+        },
+        "config": {
+          "type": "object",
+          "required": [
+            "api_key"
+          ],
+          "properties": {
+            "api_key": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
