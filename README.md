@@ -119,7 +119,7 @@ Then, execute the following commands:
 
 ```ShellSession
 $ make create_env
-$ conda activate yaml_config_wrapper
+$ conda activate cloud_filemanager
 $ make dist
 ```
 
@@ -160,7 +160,7 @@ Finally, execute the following commands:
 
 ```ShellSession
 $ make create_env
-$ conda activate yaml_config_wrapper
+$ conda activate cloud_filemanager
 $ make release
 ```
 

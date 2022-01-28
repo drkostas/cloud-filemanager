@@ -7,9 +7,9 @@ import copy
 from typing import Tuple
 from dropbox.exceptions import BadInputError
 
-from cloud_filemanager import DropboxCloudManager, CloudConfig
+from cloud_filemanager import DropboxCloudManager, CloudConfig, ColorLogger
 
-logger = logging.getLogger('TestDropboxCloudstore')
+logger = ColorLogger('TestDropboxCloudstore')
 
 
 class TestDropboxCloudstore(unittest.TestCase):
