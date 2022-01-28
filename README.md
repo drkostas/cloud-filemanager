@@ -5,7 +5,7 @@
 
 ## About <a name = "about"></a>
 
-A high-level filemanager utility for cloud services. Currently only Dropbox 
+A high-level filemanager utility for cloud services. Currently, only Dropbox 
 is supported. [PYPI Package](https://pypi.org/project/cloud-filemanager/)
 
 ## Table of Contents
@@ -24,7 +24,7 @@ is supported. [PYPI Package](https://pypi.org/project/cloud-filemanager/)
 ## Using the library <a name = "using"></a>
 
 For a detailed usage example see 
-[example.py](https://github.com/drkostas/cloud-filemanager/tree/master/example.py).
+[example.py](https://github.com/drkostas/cloud-filemanager/master/example.py).
 
 ### Installing and using the library <a name = "install_use"></a>
 
