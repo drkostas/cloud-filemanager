@@ -1,2 +1,2 @@
 # You should create a new file with ".env" name or something similar and NOT include it in your git
-export DROPBOX_API_KEY=my-api-key
+export DROPBOX_API_KEY='my-api-key'
