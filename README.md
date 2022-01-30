@@ -1,7 +1,8 @@
 # Cloud Filemanager
 
-[![CircleCI](https://circleci.com/gh/drkostas/cloud-filemanager/tree/master.svg?style=svg)](https://circleci.com/gh/drkostas/cloud-filemanager/tree/master)
+[![Downloads](https://static.pepy.tech/personalized-badge/cloud-filemanager?period=total&units=international_system&left_color=grey&right_color=red&left_text=Downloads)](https://pepy.tech/project/cloud-filemanager)
 [![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/drkostas/cloud-filemanager/master/LICENSE)
+[![CircleCI](https://circleci.com/gh/drkostas/cloud-filemanager/tree/master.svg?style=svg)](https://circleci.com/gh/drkostas/cloud-filemanager/tree/master)
 
 ## About <a name = "about"></a>
 
