@@ -1,3 +1,5 @@
+![cloud-filemanager](docs/images/banner.png)
+
 # Cloud Filemanager
 
 [![Downloads](https://static.pepy.tech/personalized-badge/cloud-filemanager?period=total&units=international_system&left_color=grey&right_color=red&left_text=Downloads)](https://pepy.tech/project/cloud-filemanager)
