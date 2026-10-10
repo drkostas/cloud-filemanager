@@ -1,0 +1,11 @@
+kind: banner
+name: cloud-filemanager
+line: A Python library to upload, download and list your files on Dropbox.
+accent: sky
+diagram:
+- folder:
+    label: local files
+- arrow: upload
+- cloud:
+    label: dropbox
+    accent: true
